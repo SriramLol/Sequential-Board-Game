@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 20px;
+            background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/poker-cards-chips-casino-gambling-cards-player-gift-thomas-larch.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            color: lightskyblue;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Set buttons to appear vertically */
+            align-items: center; /* Center buttons horizontally */
+        }
+        button {
+            font-size: 24px;
+            margin: 60px;
+            padding: 15px 30px;
+            cursor: pointer;
+            background-color: #410450; /* Gray background */
+            border: none;
+            color: white; /* Button text color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Sequential!</h1>
+    
+
+    <div class="button-container">
+        <!-- Start Game Button -->
+        <button onclick="startGame()">Start Game</button>
+
+        <!-- Options Button -->
+        <button onclick="goToOptions()">Options</button>
+
+        <!-- Quit Button -->
+        <button onclick="quitGame()">Quit game</button>
+    </div>
+
+    <script>
+        // Function to navigate to Page 2 (Start Game)
+        function startGame() {
+            window.location.href = 'page2.html';
+        }
+
+        // Function to navigate to Page 3 (Options)
+        function goToOptions() {
+            window.location.href = 'page3.html';
+        }
+
+        // Function to quit the game (close the browser window)
+        function quitGame() {
+            window.close();
+        }
+    </script>
+</body>
+</html>
